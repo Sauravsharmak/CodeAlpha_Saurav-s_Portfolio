@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- for dark and light mode  -->
+    <div class="mode-toggle">
+        <label>
+            <input type="checkbox" id="themeToggle" />
+            🌞 / 🌙
+        </label>
+    </div>
+
+    <div class="calculator">
+        <div class="history">
+            <h3>History</h3>
+            <ul id="historyList"></ul>
+        </div>
+        <input type="text" id="display" disabled />
+        <button id="copyBtn">📋</button>
+        <div class="buttons">
+            <button class="btn" data-key="C">C</button>
+            <button class="btn" data-key="/">÷</button>
+            <button class="btn" data-key="*">×</button>
+            <button class="btn" data-key="Backspace">⌫</button>
+
+            <button class="btn" data-key="7">7</button>
+            <button class="btn" data-key="8">8</button>
+            <button class="btn" data-key="9">9</button>
+            <button class="btn" data-key="-">−</button>
+
+            <button class="btn" data-key="4">4</button>
+            <button class="btn" data-key="5">5</button>
+            <button class="btn" data-key="6">6</button>
+            <button class="btn" data-key="+">+</button>
+
+            <button class="btn" data-key="1">1</button>
+            <button class="btn" data-key="2">2</button>
+            <button class="btn" data-key="3">3</button>
+            <button class="btn equals" data-key="Enter">=</button>
+
+            <button class="btn zero" data-key="0">0</button>
+            <button class="btn" data-key=".">.</button>
+        </div>
+        <audio id="clickSound" src="music/click.mp3" preload="auto"></audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
